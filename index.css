@@ -22,3 +22,20 @@
 .item--clicked {
     background-color: white;
 }
+
+.r1등 {
+    background-color: yellow;
+    font-weight: bold;
+} 
+
+.r2등 {
+    background-color: rgb(166, 255, 94);
+} 
+
+.r3등 {
+    background-color: rgb(255, 194, 103);
+} 
+
+.r4등 {
+    background-color: rgb(182, 228, 255);
+} 

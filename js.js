@@ -20,7 +20,9 @@ startButton.addEventListener('click', startGame)
 function selectItem(e) {
     const selectedItem = e.target
     selectedItem.classList.add('item--clicked')
+    selectedItem.classList.add("r" + results[selectedItem.innerText-1])
     selectedItem.innerText = results[selectedItem.innerText-1]
+    selectedItem.removeEventListener('click', selectItem)
 }
 
 
