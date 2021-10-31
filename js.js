@@ -39,6 +39,8 @@ function startGame() {
         alert("입력값 오류")
         return
     }
+    startButton.disabled = true
+    container.classList.remove("container--default")
     for (i = 1; i < 6; i++){
         names[i] = labels[i].value
     }
@@ -86,4 +88,3 @@ function setCounters() {
     }
 }
 
-startGame()
