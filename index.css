@@ -1,31 +1,114 @@
+.main {
+    width: 720px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #F5F5F5;
+    font-family: 'GmarketSansTTFBold';  
+}
+
+input {
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    background-color: inherit;
+    text-align: center;
+    border: none;
+}
+
+.control {
+    height: 140px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.control-box {
+    border: 0px solid black;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.control-box:nth-child(8) {
+	grid-column: 8 / 9;
+	grid-row: 1 / 4;
+}
+
+.label {
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.labels {
+    width: 100%;
+    height: 100%;
+    padding-top: 3px;
+}
+
+.counters {
+    padding-left: 4px;
+}
+
+.counters:last-child {
+    padding: 0;
+}
+
 #startButton {
-    width: 5em;
+    width: 100%;
+    height: 100%;
     font-size: 2rem;
-    margin-left: calc(50% - 2.5em)
+    font-family: 'GmarketSansTTFBold';  
 }
 
 .container {
     width: 100%;
+    background: url(nnabi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(10%, auto));
-    gap: 20px 0px
 }
 
 .item {
-    width: 100px;
-    height: 30px;
-    background-color: rgb(192, 192, 192);
+    height: 40px;
+    background-color: transparent;
+    box-sizing: border-box;
+    border: 1px solid black;
     outline: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-shadow: -2px 0 #ffffff, 0 2px #ffffff, 2px 0 #ffffff, 0 -2px #ffffff;
 }
 
 .item--clicked {
     background-color: white;
+    text-shadow: none;
+    font-size: 1rem;
+    padding: 2px;
+    font-weight: bold;
+    font-family: 'GmarketSansTTFBold';  
+}
+
+.memo {
+    background-color: transparent;
+    width: 100%;
+    height: 100px;
+    border: none;
+    outline: none;
+    font-family: 'GmarketSansTTFBold';
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    resize:none;
 }
 
 .r1등 {
-    background-color: yellow;
-    font-weight: bold;
+    background-color: rgb(255, 255, 0);
 } 
 
 .r2등 {
@@ -39,3 +122,12 @@
 .r4등 {
     background-color: rgb(182, 228, 255);
 } 
+
+.r5등 {
+    background-color: rgb(160, 154, 175);
+} 
+
+@font-face {
+    font-family: 'GmarketSansTTFBold';
+    src: url(./GmarketSansTTFBold.ttf);
+}
